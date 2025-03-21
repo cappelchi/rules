@@ -24,7 +24,7 @@
       "ms-python.python"
       "ms-python.debugpy"
       "ms-toolsai.jupyter"
-      "ms-python.black-formatter"
+      "	charliermarsh.ruff"
       "bracket-pair-colorizer-2"
       "eduarbo.relative-file-navigator"
       "solomonkinard.vsix-lens"
