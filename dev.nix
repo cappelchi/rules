@@ -55,8 +55,7 @@ workspace = {
 # cat requirements.txt | xargs poetry add
 # poetry self update
 # [ -f ./rules_for_writing_with_python.md ] || wget -q -O ./rules_for_writing_with_python.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_with_python.md
-# [ -f ./guidelines_for_writing_with_python.md ] || wget -q -O ./guidelines_for_writing_with_python.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/3eY7ims_7BZc5Q
-# [ -f ./guidelines_for_writing_tests.md ] || wget -q -O ./guidelines_for_writing_tests.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/STrOMjDek94_zA
+# [ -f ./rules_for_writing_tests_FastAPI.md ] || wget -q -O ./rules_for_writing_tests_FastAPI.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_tests_FastAPI.md
 # [ -f ./guidelines_for_writing_neo4j_database_queries.md ] || wget -q -O ./guidelines_for_writing_neo4j_database_queries.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/mQDu7dkNmKa1_Q
 # [ -f ./guidelines_for_writing_with_pandas.md ] || wget -q -O ./guidelines_for_writing_with_pandas.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/-dbtNBtZDwoJAQ
 # [ -f ./guidelines_for_scikit_learn_pipline.md ] || wget -q -O ./guidelines_for_scikit_learn_pipline.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/JDFedneGBhYH-w
@@ -69,7 +68,7 @@ workspace = {
 		create-venv = ''
       if ! git status &> /dev/null; then git init && git add *; fi
       [ -f ./rules_for_writing_with_python.md ] || wget -q -O ./rules_for_writing_with_python.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_with_python.md
-      [ -f ./guidelines_for_writing_tests.md ] || wget -q -O ./guidelines_for_writing_tests.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/STrOMjDek94_zA
+      [ -f ./rules_for_writing_tests_FastAPI.md ] || wget -q -O ./rules_for_writing_tests_FastAPI.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_tests_FastAPI.md
       [ -f ./guidelines_for_writing_with_pandas.md ] || wget -q -O ./guidelines_for_writing_with_pandas.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/-dbtNBtZDwoJAQ
       [ -f ./guidelines_for_scikit_learn_pipline.md ] || wget -q -O ./guidelines_for_scikit_learn_pipline.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/JDFedneGBhYH-w
       [ -f ./guidelines_for_data_analysis_with_scikit_learn.md ] || wget -q -O ./guidelines_for_data_analysis_with_scikit_learn.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/t8QAqxnj-JzP4g
@@ -86,7 +85,7 @@ workspace = {
 		active-venv = ''
       if ! git status &> /dev/null; then git init && git add *; fi
       [ -f ./rules_for_writing_with_python.md ] || wget -q -O ./rules_for_writing_with_python.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_with_python.md
-      [ -f ./guidelines_for_writing_tests.md ] || wget -q -O ./guidelines_for_writing_tests.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/STrOMjDek94_zA
+      [ -f ./rules_for_writing_tests_FastAPI.md ] || wget -q -O ./rules_for_writing_tests_FastAPI.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_tests_FastAPI.md
       [ -f ./guidelines_for_writing_with_pandas.md ] || wget -q -O ./guidelines_for_writing_with_pandas.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/-dbtNBtZDwoJAQ
       [ -f ./guidelines_for_scikit_learn_pipline.md ] || wget -q -O ./guidelines_for_scikit_learn_pipline.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/JDFedneGBhYH-w
       [ -f ./guidelines_for_data_analysis_with_scikit_learn.md ] || wget -q -O ./guidelines_for_data_analysis_with_scikit_learn.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/t8QAqxnj-JzP4g
