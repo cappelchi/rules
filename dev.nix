@@ -56,24 +56,21 @@ workspace = {
 # poetry self update
 # [ -f ./rules_for_writing_with_python.md ] || wget -q -O ./rules_for_writing_with_python.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_with_python.md
 # [ -f ./rules_for_writing_tests_FastAPI.md ] || wget -q -O ./rules_for_writing_tests_FastAPI.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_tests_FastAPI.md
-# [ -f ./guidelines_for_writing_neo4j_database_queries.md ] || wget -q -O ./guidelines_for_writing_neo4j_database_queries.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/mQDu7dkNmKa1_Q
-# [ -f ./guidelines_for_writing_with_pandas.md ] || wget -q -O ./guidelines_for_writing_with_pandas.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/-dbtNBtZDwoJAQ
-# [ -f ./guidelines_for_scikit_learn_pipline.md ] || wget -q -O ./guidelines_for_scikit_learn_pipline.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/JDFedneGBhYH-w
-# [ -f ./guidelines_for_data_analysis_with_scikit_learn.md ] || wget -q -O ./guidelines_for_data_analysis_with_scikit_learn.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/t8QAqxnj-JzP4g
-# [ -f ./guidelines_feature_engineering.md ] || wget -q -O ./guidelines_feature_engineering.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/EUpvgg0KOhHLpA
-# [ -f ./general_rules.md ] || wget -q -O ./general_rules.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/EUpvgg0KOhHLpA
-# [ -f ./guidelines_for_writing_FastAPI.md ] || wget -q -O ./guidelines_for_writing_FastAPI.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/-qpcsdP3VN0i7w
+# [ -f ./rules_for_writing_Neo4j_queries.md ] || wget -q -O ./rules_for_writing_Neo4j_queries.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_Neo4j_queries.md
+# [ -f ./rules_for_writing_with_pandas.md ] || wget -q -O ./rules_for_writing_with_pandas.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_with_pandas.md
+# [ -f ./rules_for_writing_with_scikit_learn.md ] || wget -q -O ./rules_for_writing_with_scikit_learn.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_with_scikit_learn.md
+# [ -f ./rules_for_data_analysis_with_scikit_learn.md ] || wget -q -O ./rules_for_data_analysis_with_scikit_learn.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_data_analysis_with_scikit_learn.md
+# [ -f ./general_rules.md ] || wget -q -O ./general_rules.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/general_rules.md
 
 	onCreate = {
 		create-venv = ''
       if ! git status &> /dev/null; then git init && git add *; fi
       [ -f ./rules_for_writing_with_python.md ] || wget -q -O ./rules_for_writing_with_python.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_with_python.md
       [ -f ./rules_for_writing_tests_FastAPI.md ] || wget -q -O ./rules_for_writing_tests_FastAPI.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_tests_FastAPI.md
-      [ -f ./guidelines_for_writing_with_pandas.md ] || wget -q -O ./guidelines_for_writing_with_pandas.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/-dbtNBtZDwoJAQ
-      [ -f ./guidelines_for_scikit_learn_pipline.md ] || wget -q -O ./guidelines_for_scikit_learn_pipline.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/JDFedneGBhYH-w
-      [ -f ./guidelines_for_data_analysis_with_scikit_learn.md ] || wget -q -O ./guidelines_for_data_analysis_with_scikit_learn.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/t8QAqxnj-JzP4g
-      [ -f ./guidelines_feature_engineering.md ] || wget -q -O ./guidelines_feature_engineering.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/EUpvgg0KOhHLpA
-      [ -f ./general_rules.md ] || wget -q -O ./general_rules.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/EUpvgg0KOhHLpA
+      [ -f ./rules_for_writing_with_pandas.md ] || wget -q -O ./rules_for_writing_with_pandas.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_with_pandas.md
+      [ -f ./rules_for_writing_with_scikit_learn.md ] || wget -q -O ./rules_for_writing_with_scikit_learn.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_with_scikit_learn.md
+      [ -f ./rules_for_data_analysis_with_scikit_learn.md ] || wget -q -O ./rules_for_data_analysis_with_scikit_learn.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_data_analysis_with_scikit_learn.md
+      [ -f ./general_rules.md ] || wget -q -O ./general_rules.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/general_rules.md
       if ! find . -name "*.toml" | grep -q .; then poetry init; fi
       poetry shell
       poetry update
@@ -86,11 +83,10 @@ workspace = {
       if ! git status &> /dev/null; then git init && git add *; fi
       [ -f ./rules_for_writing_with_python.md ] || wget -q -O ./rules_for_writing_with_python.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_with_python.md
       [ -f ./rules_for_writing_tests_FastAPI.md ] || wget -q -O ./rules_for_writing_tests_FastAPI.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_tests_FastAPI.md
-      [ -f ./guidelines_for_writing_with_pandas.md ] || wget -q -O ./guidelines_for_writing_with_pandas.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/-dbtNBtZDwoJAQ
-      [ -f ./guidelines_for_scikit_learn_pipline.md ] || wget -q -O ./guidelines_for_scikit_learn_pipline.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/JDFedneGBhYH-w
-      [ -f ./guidelines_for_data_analysis_with_scikit_learn.md ] || wget -q -O ./guidelines_for_data_analysis_with_scikit_learn.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/t8QAqxnj-JzP4g
-      [ -f ./guidelines_feature_engineering.md ] || wget -q -O ./guidelines_feature_engineering.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/EUpvgg0KOhHLpA
-      [ -f ./general_rules.md ] || wget -q -O ./general_rules.md https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/EUpvgg0KOhHLpA 
+      [ -f ./rules_for_writing_with_pandas.md ] || wget -q -O ./rules_for_writing_with_pandas.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_with_pandas.md
+      [ -f ./rules_for_writing_with_scikit_learn.md ] || wget -q -O ./rules_for_writing_with_scikit_learn.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_writing_with_scikit_learn.md
+      [ -f ./rules_for_data_analysis_with_scikit_learn.md ] || wget -q -O ./rules_for_data_analysis_with_scikit_learn.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/rules_for_data_analysis_with_scikit_learn.md
+      [ -f ./general_rules.md ] || wget -q -O ./general_rules.md https://raw.githubusercontent.com/cappelchi/rules/refs/heads/master/general_rules.md 
       if ! find . -name "*.toml" | grep -q .; then poetry init; fi
       poetry shell
       poetry update
